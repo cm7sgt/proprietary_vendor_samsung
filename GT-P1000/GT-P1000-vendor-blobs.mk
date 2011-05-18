@@ -19,10 +19,10 @@
 #
 # RIL
 #
-PRODUCT_COPY_FILES +=  vendor/samsung/GT-P1000/proprietary/ril/libsecril-client.so:system/lib/libsecril-client.so \
-                       vendor/samsung/GT-P1000/proprietary/ril/libril.so:system/lib/libril.so \
-                       vendor/samsung/GT-P1000/proprietary/ril/libsec-ril.so:system/lib/libsec-ril.so \
-                       vendor/samsung/GT-P1000/proprietary/ril/rild:system/bin/rild
+PRODUCT_COPY_FILES +=  vendor/samsung/GT-P1000/proprietary/JQ1/ril/libsecril-client.so:system/lib/libsecril-client.so \
+                       vendor/samsung/GT-P1000/proprietary/JQ1/ril/libril.so:system/lib/libril.so \
+                       vendor/samsung/GT-P1000/proprietary/JQ1/ril/libsec-ril.so:system/lib/libsec-ril.so \
+                       vendor/samsung/GT-P1000/proprietary/JQ1/ril/rild:system/bin/rild
 
 #
 # GPS, grab Crespo GPS that Aries uses
@@ -56,20 +56,22 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/wifi/bcm4329_aps.bin:s
 #
 # Graphics/GL driver
 #
-PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/egl/pvrsrvinit:system/bin/pvrsrvinit \
-                      vendor/samsung/GT-P1000/proprietary/egl/egl.cfg:system/lib/egl/egl.cfg \
-                      vendor/samsung/GT-P1000/proprietary/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libIMGegl.so:system/lib/libIMGegl.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libpvr2d.so:system/lib/libpvr2d.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libsrv_um.so:system/lib/libsrv_um.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libsrv_init.so:system/lib/libsrv_init.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/libglslcompiler.so:system/lib/libglslcompiler.so \
-                      vendor/samsung/GT-P1000/proprietary/egl/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/pvrsrvinit:system/bin/pvrsrvinit \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/egl.cfg:system/lib/egl/egl.cfg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libIMGegl.so:system/lib/libIMGegl.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libpvr2d.so:system/lib/libpvr2d.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libsrv_um.so:system/lib/libsrv_um.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libsrv_init.so:system/lib/libsrv_init.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libusc.so:system/lib/libusc.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libglslcompiler.so:system/lib/libglslcompiler.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
 
 #
 # Keyboard
@@ -95,48 +97,60 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/kbd/AT42QT602240_Touch
 # Modules
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-P1000/proprietary/modules/fsr.ko:root/lib/modules/fsr.ko \
-    vendor/samsung/GT-P1000/proprietary/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
-    vendor/samsung/GT-P1000/proprietary/modules/j4fs.ko:root/lib/modules/j4fs.ko \
-    vendor/samsung/GT-P1000/proprietary/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
-    vendor/samsung/GT-P1000/proprietary/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
-    vendor/samsung/GT-P1000/proprietary/modules/storage.ko:root/lib/modules/storage.ko \
-    vendor/samsung/GT-P1000/proprietary/modules/param.ko:root/lib/modules/param.ko
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/fsr.ko:root/lib/modules/fsr.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/j4fs.ko:root/lib/modules/j4fs.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/storage.ko:root/lib/modules/storage.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/param.ko:root/lib/modules/param.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/jbd2.ko:root/lib/modules/jbd2.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/ext4.ko:root/lib/modules/ext4.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/ansi_cprng.ko:system/lib/modules/2.6.35.7/ansi_cprng.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/bthid.ko:system/lib/modules/2.6.35.7/bthid.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/dhd.ko:system/lib/modules/2.6.35.7/dhd.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/scsi_wait_scan.ko:system/lib/modules/2.6.35.7/scsi_wait_scan.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/cifs.ko:system/lib/modules/2.6.35.7/cifs.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/slow-work.ko:system/lib/modules/2.6.35.7/slow-work.ko
 
 #
 # Other
 #
-PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/other/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-P1000/proprietary/JQ1/other/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/other/overlay.s5pc110.so:system/lib/hw/overlay.s5pc110.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/other/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/other/sensors.GT-P1000.so:system/lib/hw/sensors.GT-P1000.so
 
 #
 # Files for battery charging screen
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-P1000/proprietary/lpm/playlpm:system/bin/playlpm \
-    vendor/samsung/GT-P1000/proprietary/lpm/charging_mode:system/bin/charging_mode \
-    vendor/samsung/GT-P1000/proprietary/lpm/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/chargingwarning_disconnected.qmg:system/media/chargingwarning_disconnected.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/chargingwarning_temp.qmg:system/media/chargingwarning_temp.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/usb_not_charging.qmg:system/media/usb_not_charging.qmg \
-    vendor/samsung/GT-P1000/proprietary/lpm/immvibed:system/bin/immvibed
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/playlpm:system/bin/playlpm \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/charging_mode:system/bin/charging_mode \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/chargingwarning_disconnected.qmg:system/media/chargingwarning_disconnected.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/chargingwarning_temp.qmg:system/media/chargingwarning_temp.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/usb_not_charging.qmg:system/media/usb_not_charging.qmg \
+    vendor/samsung/GT-P1000/proprietary/JQ1/lpm/immvibed:system/bin/immvibed
 
