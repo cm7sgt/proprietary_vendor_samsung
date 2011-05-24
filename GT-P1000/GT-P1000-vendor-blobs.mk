@@ -120,7 +120,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/other/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/other/overlay.s5pc110.so:system/lib/hw/overlay.s5pc110.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/other/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/other/sensors.GT-P1000.so:system/lib/hw/sensors.GT-P1000.so
+    vendor/samsung/GT-P1000/proprietary/JQ1/other/sensors.GT-P1000.so:system/lib/hw/sensors.GT-P1000.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/other/libakm.so:system/lib/libakm.so
 
 #
 # Files for battery charging screen
