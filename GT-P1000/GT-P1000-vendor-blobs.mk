@@ -27,10 +27,10 @@ PRODUCT_COPY_FILES +=  vendor/samsung/GT-P1000/proprietary/JQ1/ril/libsecril-cli
 #
 # GPS, grab Crespo GPS that Aries uses
 #
-PRODUCT_COPY_FILES += vendor/samsung/common/aries/proprietary/gpsd:system/bin/gpsd \
-                      vendor/samsung/common/aries/proprietary/gps.conf:system/etc/gps.conf \
-                      vendor/samsung/common/aries/proprietary/gps.xml:system/etc/gps.xml \
-                      vendor/samsung/common/aries/proprietary/gps.aries.so:system/lib/hw/gps.s5pc110.so
+PRODUCT_COPY_FILES += vendor/samsung/aries-common/proprietary/gpsd:system/bin/gpsd \
+                      vendor/samsung/aries-common/proprietary/gps.conf:system/etc/gps.conf \
+                      vendor/samsung/aries-common/proprietary/gps.xml:system/etc/gps.xml \
+                      vendor/samsung/aries-common/proprietary/gps.aries.so:system/lib/hw/gps.s5pc110.so
 
 #
 # Bluetooth
