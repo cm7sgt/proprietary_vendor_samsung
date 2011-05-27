@@ -41,17 +41,17 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/bluetooth/BCM4329B1_00
 # WIFI
 #
 # mfg loader can be used to load different nvram_mfg
-PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
-                      vendor/samsung/GT-P1000/proprietary/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
-                      vendor/samsung/GT-P1000/proprietary/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_mfg_lna.txt:system/etc/wifi/nvram_mfg_lna.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_mfg_nolna.txt:system/etc/wifi/nvram_mfg_nolna.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_net_2G.txt:system/etc/wifi/nvram_net_2G.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_net_lna.txt:system/etc/wifi/nvram_net_lna.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/nvram_net_nolna.txt:system/etc/wifi/nvram_net_nolna.txt \
-                      vendor/samsung/GT-P1000/proprietary/wifi/mfgloader:system/bin/mfgloader
+PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/JQ1/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_mfg_lna.txt:system/etc/wifi/nvram_mfg_lna.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_mfg_nolna.txt:system/etc/wifi/nvram_mfg_nolna.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_net_2G.txt:system/etc/wifi/nvram_net_2G.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_net_lna.txt:system/etc/wifi/nvram_net_lna.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/nvram_net_nolna.txt:system/etc/wifi/nvram_net_nolna.txt \
+                      vendor/samsung/GT-P1000/proprietary/JQ1/wifi/mfgloader:system/bin/mfgloader
 
 #
 # Graphics/GL driver
@@ -103,15 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
     vendor/samsung/GT-P1000/proprietary/JQ1/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
     vendor/samsung/GT-P1000/proprietary/JQ1/modules/storage.ko:root/lib/modules/storage.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/param.ko:root/lib/modules/param.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/jbd2.ko:root/lib/modules/jbd2.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/ext4.ko:root/lib/modules/ext4.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/ansi_cprng.ko:system/lib/modules/2.6.35.7/ansi_cprng.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/bthid.ko:system/lib/modules/2.6.35.7/bthid.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/dhd.ko:system/lib/modules/2.6.35.7/dhd.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/scsi_wait_scan.ko:system/lib/modules/2.6.35.7/scsi_wait_scan.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/cifs.ko:system/lib/modules/2.6.35.7/cifs.ko \
-    vendor/samsung/GT-P1000/proprietary/JQ1/modules/extra/slow-work.ko:system/lib/modules/2.6.35.7/slow-work.ko
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/param.ko:root/lib/modules/param.ko
 
 #
 # Other
