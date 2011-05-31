@@ -165,6 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
 #    vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcamera_client.so:system/lib/libcamera_client.so \
+
 #
 # TV out
 #
@@ -178,4 +179,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/tvout/libtvouthdmi.so:system/lib/libtvouthdmi.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/tvout/libtvoutservice.so:system/lib/libtvoutservice.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/tvout/tvoutserver:system/bin/tvoutserver
+
+#
+# redbend_ua
+#
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-P1000/proprietary/redbend_ua:utilities/redbend_ua
 
