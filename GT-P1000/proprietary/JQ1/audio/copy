@@ -1,0 +1,31 @@
+adb remount
+
+adb push lib_Samsung_Acoustic_Module_Llite.so /system/lib
+adb push lib_Samsung_Resampler.so /system/lib
+adb push lib_Samsung_Sound_Booster_Tablet.so /system/lib
+adb push libasound.so /system/lib
+adb push libaudio.so /system/lib
+adb push libsamsungAcousticeq.so /system/lib
+adb push libsamsungSoundbooster.so  /system/lib
+adb push asound.conf /system/etc
+
+adb shell mkdir -p /system/usr/share/alsa
+adb shell mkdir -p /system/usr/share/alsa/cards
+adb shell mkdir -p /system/usr/share/alsa/pcm
+adb push alsa.conf /system/usr/share/alsa
+adb push aliases.conf /system/usr/share/alsa/cards
+adb push center_lfe.conf /system/usr/share/alsa/pcm
+adb push default.conf /system/usr/share/alsa/pcm
+adb push dmix.conf /system/usr/share/alsa/pcm
+adb push dpl.conf /system/usr/share/alsa/pcm
+adb push dsnoop.conf /system/usr/share/alsa/pcm
+adb push front.conf /system/usr/share/alsa/pcm
+adb push iec958.conf /system/usr/share/alsa/pcm
+adb push modem.conf /system/usr/share/alsa/pcm
+adb push rear.conf /system/usr/share/alsa/pcm
+adb push side.conf /system/usr/share/alsa/pcm
+adb push surround40.conf /system/usr/share/alsa/pcm
+adb push surround41.conf /system/usr/share/alsa/pcm
+adb push surround50.conf /system/usr/share/alsa/pcm
+adb push surround51.conf /system/usr/share/alsa/pcm
+adb push surround71.conf /system/usr/share/alsa/pcm
