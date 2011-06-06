@@ -186,3 +186,33 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/redbend_ua:utilities/redbend_ua
 
+#
+# samsung binary audio
+#
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/asound.conf:system/etc/asound.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/lib_Samsung_Sound_Booster_Tablet.so:system/lib/lib_Samsung_Sound_Booster_Tablet.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/libasound.so:system/lib/libasound.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/libaudio.so:system/lib/libaudio.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/alsa.conf:system/usr/share/alsa/alsa.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/default.conf:system/usr/share/alsa/pcm/default.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/dmix.conf:system/usr/share/alsa/pcm/dmix.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/dpl.conf:system/usr/share/alsa/pcm/dpl.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/dsnoop.conf:system/usr/share/alsa/pcm/dsnoop.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/front.conf:system/usr/share/alsa/pcm/front.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/iec958.conf:system/usr/share/alsa/pcm/iec958.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/modem.conf:system/usr/share/alsa/pcm/modem.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/rear.conf:system/usr/share/alsa/pcm/rear.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/side.conf:system/usr/share/alsa/pcm/side.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/surround40.conf:system/usr/share/alsa/pcm/surround40.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
+#    vendor/samsung/GT-P1000/proprietary/JQ1/audio/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
+
