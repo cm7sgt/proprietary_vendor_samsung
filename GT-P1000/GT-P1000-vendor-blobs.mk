@@ -59,10 +59,10 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/JQ1/wifi/bcm4329_aps.b
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/egl/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/samsung/GT-P1000/proprietary/JQ1/egl/egl.cfg:system/lib/egl/egl.cfg \
-    vendor/samsung/GT-P1000/proprietary/crespo/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    vendor/samsung/GT-P1000/proprietary/crespo/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    vendor/samsung/GT-P1000/proprietary/crespo/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/egl/libIMGegl.so:system/lib/libIMGegl.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/egl/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/egl/libpvr2d.so:system/lib/libpvr2d.so \
