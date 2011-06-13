@@ -35,7 +35,9 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/crespo/gps/gpsd:system
 #
 # Bluetooth
 #
-PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/bluetooth/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-P1000/proprietary/JQ1/bt/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd \
+    vendor/samsung/GT-P1000/proprietary/JQ1/bt/brcm_patchram_plus:system/bin/brcm_patchram_plus
 
 #
 # WIFI
