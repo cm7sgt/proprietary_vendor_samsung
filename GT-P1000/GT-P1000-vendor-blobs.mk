@@ -86,7 +86,6 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/kbd/AT42QT602240_Touch
                       vendor/samsung/GT-P1000/proprietary/kbd/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
                       vendor/samsung/GT-P1000/proprietary/kbd/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
                       vendor/samsung/GT-P1000/proprietary/kbd/sec_jack.kcm.bin:system/usr/keychars/sec_jack.kcm.bin \
-                      vendor/samsung/GT-P1000/proprietary/kbd/AT42QT602240_Touchscreen.kl:system/usr/keylayout/AT42QT602240_Touchscreen.kl \
                       vendor/samsung/GT-P1000/proprietary/kbd/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
                       vendor/samsung/GT-P1000/proprietary/kbd/Broadcom_Bluetooth_HID.kl:system/usr/keylayout/Broadcom_Bluetooth_HID.kl \
                       vendor/samsung/GT-P1000/proprietary/kbd/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
