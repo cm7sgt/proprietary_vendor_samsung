@@ -59,21 +59,21 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/JQ1/wifi/bcm4329_aps.b
 # Graphics/GL driver
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/egl.cfg:system/lib/egl/egl.cfg \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libIMGegl.so:system/lib/libIMGegl.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libpvr2d.so:system/lib/libpvr2d.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libsrv_um.so:system/lib/libsrv_um.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libsrv_init.so:system/lib/libsrv_init.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libusc.so:system/lib/libusc.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/libglslcompiler.so:system/lib/libglslcompiler.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/egl/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/pvrsrvinit:system/bin/pvrsrvinit \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/egl.cfg:system/lib/egl/egl.cfg \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libIMGegl.so:system/lib/libIMGegl.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libpvr2d.so:system/lib/libpvr2d.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libsrv_um.so:system/lib/libsrv_um.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libsrv_init.so:system/lib/libsrv_init.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libusc.so:system/lib/libusc.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/libglslcompiler.so:system/lib/libglslcompiler.so \
+    vendor/samsung/SPH-P100/proprietary/EF17/egl/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
 
 #
 # Keyboard
