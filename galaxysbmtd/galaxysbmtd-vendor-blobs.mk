@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxysbmtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/galaxysbmtd/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/galaxysbmtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/galaxysbmtd/proprietary/libcamera.so:system/lib/libcamera.so
-
+    vendor/samsung/galaxysbmtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/aries-common/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
+    vendor/samsung/aries-common/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so
     
     

@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/c1-common/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/c1-common/proprietary/audio/libaudio.so:obj/lib/libaudio.so \
+    vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so \
     vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so
 
 # All the blobs necessary for galaxys2 devices
@@ -30,13 +31,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/c1-common/proprietary/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/c1-common/proprietary/libEGL.so:system/lib/libEGL.so \
-    vendor/samsung/c1-common/proprietary/libexifa.so:system/lib/libexifa.so \
     vendor/samsung/c1-common/proprietary/libexif.so:system/lib/libexif.so \
     vendor/samsung/c1-common/proprietary/libfimc.so:system/lib/libfimc.so \
     vendor/samsung/c1-common/proprietary/libfimg.so:system/lib/libfimg.so \
     vendor/samsung/c1-common/proprietary/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
     vendor/samsung/c1-common/proprietary/libGLESv2.so:system/lib/libGLESv2.so \
-    vendor/samsung/c1-common/proprietary/libjpega.so:system/lib/libjpega.so \
     vendor/samsung/c1-common/proprietary/libMali.so:system/lib/libMali.so \
     vendor/samsung/c1-common/proprietary/libOpenSLES.so:system/lib/libOpenSLES.so \
     vendor/samsung/c1-common/proprietary/libPanoraMax3.so:system/lib/libPanoraMax3.so \
@@ -44,7 +43,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libs5pjpeg.so:system/lib/libs5pjpeg.so \
     vendor/samsung/c1-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/c1-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/c1-common/proprietary/libsecjpegencoder.so:system/lib/libsecjpegencoder.so \
+    vendor/samsung/c1-common/proprietary/libsecjpegarcsoft.so:system/lib/libsecjpegarcsoft.so \
+    vendor/samsung/c1-common/proprietary/libsecjpegboard.so:system/lib/libsecjpegboard.so \
+    vendor/samsung/c1-common/proprietary/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
     vendor/samsung/c1-common/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/c1-common/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/c1-common/proprietary/libtvoutcec.so:system/lib/libtvoutcec.so \
@@ -59,8 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libtvout.so:system/lib/libtvout.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/vendor/firmware/bcm4330.hcd \
-    vendor/samsung/c1-common/proprietary/mediaserver:system/bin/mediaserver \
+    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0128.0162.hcd:system/bin/BCM4330B1_002.001.003.0128.0162.hcd \
     vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/firmware/qt602240.fw:system/etc/firmware/qt602240.fw \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OB.bin:system/etc/firmware/RS_M5LS_OB.bin \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OC.bin:system/etc/firmware/RS_M5LS_OC.bin \
+    vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OE.bin:system/etc/firmware/RS_M5LS_OE.bin \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_TB.bin:system/etc/firmware/RS_M5LS_TB.bin \
     vendor/samsung/c1-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
 
@@ -87,8 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.smdkv310.so \
     vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/vendor-gps.smdkv310.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-    vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so \
-    vendor/samsung/c1-common/proprietary/hw/overlay.GT-I9100.so:system/lib/hw/overlay.smdkv310.so
+    vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \
@@ -98,6 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/keychars/sec_touchkey.kcm.bin:system/usr/keychars/sec_touchkey.kcm.bin
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/c1-common/proprietary/wifi/bcm4330_aps.bin:system/vendor/firmware/bcm4330_aps.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_mfg.bin:system/vendor/firmware/bcm4330_mfg.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_sta.bin:system/vendor/firmware/bcm4330_sta.bin
 
