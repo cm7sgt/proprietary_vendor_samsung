@@ -30,3 +30,4 @@ PRODUCT_COPY_FILES := \
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/GT-P1000/overlay
 
 $(call inherit-product, vendor/samsung/GT-P1000/GT-P1000-vendor-blobs.mk)
+$(call inherit-product, vendor/samsung/GT-P1000/galaxytab-common-vendor-blobs.mk)
