@@ -32,4 +32,15 @@ PRODUCT_COPY_FILES += vendor/samsung/GT-P1000/proprietary/crespo/gps/gpsd:system
                       vendor/samsung/GT-P1000/proprietary/crespo/gps/gps.xml:system/etc/gps.xml \
                       vendor/samsung/GT-P1000/proprietary/crespo/gps/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so
 
+#
+# Modules
+#
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/fsr.ko:root/lib/modules/fsr.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/j4fs.ko:root/lib/modules/j4fs.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/storage.ko:root/lib/modules/storage.ko \
+    vendor/samsung/GT-P1000/proprietary/JQ1/modules/param.ko:root/lib/modules/param.ko
 

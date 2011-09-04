@@ -47,4 +47,11 @@ PRODUCT_COPY_FILES += vendor/samsung/SPH-P100/proprietary/EF17/gps/gpsd:system/b
 # Modules
 #
 PRODUCT_COPY_FILES += vendor/samsung/SPH-P100/proprietary/EF17/modules/dpram_vzw.ko:root/lib/modules/dpram_vzw.ko \
-                      vendor/samsung/SPH-P100/proprietary/EF17/modules/dpram_recovery.ko:root/lib/modules/dpram_recovery.ko
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/dpram_recovery.ko:root/lib/modules/dpram_recovery.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/fsr.ko:root/lib/modules/fsr.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/j4fs.ko:root/lib/modules/j4fs.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/storage.ko:root/lib/modules/storage.ko \
+                      vendor/samsung/SPH-P100/proprietary/EF17/modules/param.ko:root/lib/modules/param.ko
