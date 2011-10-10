@@ -14,12 +14,7 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/c1-common/proprietary/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/c1-common/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudio.so:obj/lib/libaudio.so \
-    vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so
+    vendor/samsung/c1-common/proprietary/libcamera.so:obj/lib/libcamera.so
 
 # All the blobs necessary for galaxys2 devices
 PRODUCT_COPY_FILES += \
@@ -39,15 +34,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libMali.so:system/lib/libMali.so \
     vendor/samsung/c1-common/proprietary/libOpenSLES.so:system/lib/libOpenSLES.so \
     vendor/samsung/c1-common/proprietary/libPanoraMax3.so:system/lib/libPanoraMax3.so \
-    vendor/samsung/c1-common/proprietary/libril.so:system/lib/libril.so \
     vendor/samsung/c1-common/proprietary/libs5pjpeg.so:system/lib/libs5pjpeg.so \
     vendor/samsung/c1-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/c1-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
     vendor/samsung/c1-common/proprietary/libsecjpegarcsoft.so:system/lib/libsecjpegarcsoft.so \
     vendor/samsung/c1-common/proprietary/libsecjpegboard.so:system/lib/libsecjpegboard.so \
     vendor/samsung/c1-common/proprietary/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
-    vendor/samsung/c1-common/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/c1-common/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/c1-common/proprietary/libtvoutcec.so:system/lib/libtvoutcec.so \
     vendor/samsung/c1-common/proprietary/libtvoutddc.so:system/lib/libtvoutddc.so \
     vendor/samsung/c1-common/proprietary/libtvoutedid.so:system/lib/libtvoutedid.so \
@@ -60,8 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libtvout.so:system/lib/libtvout.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0128.0162.hcd:system/bin/BCM4330B1_002.001.003.0128.0162.hcd \
-    vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
+    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0221.0265.hcd:system/bin/BCM4330B1_002.001.003.0221.0265.hcd \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
 PRODUCT_COPY_FILES += \
@@ -91,41 +82,39 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \
-    vendor/samsung/c1-common/proprietary/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
-    vendor/samsung/c1-common/proprietary/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-    vendor/samsung/c1-common/proprietary/keychars/sec_key.kcm.bin:system/usr/keychars/sec_key.kcm.bin \
-    vendor/samsung/c1-common/proprietary/keychars/sec_touchkey.kcm.bin:system/usr/keychars/sec_touchkey.kcm.bin
-
-PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_aps.bin:system/vendor/firmware/bcm4330_aps.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_mfg.bin:system/vendor/firmware/bcm4330_mfg.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_sta.bin:system/vendor/firmware/bcm4330_sta.bin
 
-# blobs necessary for audio
+# offmode charging    
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/audio/alsa_amixer:system/bin/alsa_amixer \
-    vendor/samsung/c1-common/proprietary/audio/alsa_aplay:system/bin/alsa_aplay \
-    vendor/samsung/c1-common/proprietary/audio/alsa_ctl:system/bin/alsa_ctl \
-    vendor/samsung/c1-common/proprietary/audio/alsa_ucm:system/bin/alsa_ucm \
-    vendor/samsung/c1-common/proprietary/audio/libasound.so:system/lib/libasound.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudio.so:system/lib/libaudio.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudiohw_op.so:system/lib/libaudiohw_op.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudiohw_sf.so:system/lib/libaudiohw_sf.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:system/lib/libaudiopolicy.so \
-    vendor/samsung/c1-common/proprietary/audio/liblvvefs.so:system/lib/liblvvefs.so \
-    vendor/samsung/c1-common/proprietary/audio/libmediayamaha.so:system/lib/libmediayamaha.so \
-    vendor/samsung/c1-common/proprietary/audio/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
-    vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:system/lib/libmediayamahaservice.so \
-    vendor/samsung/c1-common/proprietary/audio/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
-    vendor/samsung/c1-common/proprietary/audio/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
-    vendor/samsung/c1-common/proprietary/audio/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
-    vendor/samsung/c1-common/proprietary/audio/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-    vendor/samsung/c1-common/proprietary/audio/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-    vendor/samsung/c1-common/proprietary/audio/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
-    vendor/samsung/c1-common/proprietary/audio/libsoundalive.so:system/lib/libsoundalive.so \
-    vendor/samsung/c1-common/proprietary/audio/libsoundpool.so:system/lib/libsoundpool.so \
-    vendor/samsung/c1-common/proprietary/audio/libSR_AudioIn.so:system/lib/libSR_AudioIn.so \
-    vendor/samsung/c1-common/proprietary/audio/libyamahasrc.so:system/lib/libyamahasrc.so
+    vendor/samsung/c1-common/proprietary/offmode_charging/charging_mode:system/bin/charging_mode \
+    vendor/samsung/c1-common/proprietary/offmode_charging/playlpm:system/bin/playlpm \
+    vendor/samsung/c1-common/proprietary/offmode_charging/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/battery_error.qmg:system/media/battery_error.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/c1-common/proprietary/offmode_charging/Disconnected.qmg:system/media/Disconnected.qmg
+
+
 
