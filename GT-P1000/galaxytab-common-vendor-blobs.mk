@@ -131,7 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libCaMotion.so:system/lib/libCaMotion.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libPanoraMax1.so:system/lib/libPanoraMax1.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libs3cjpeg.so:system/lib/libs3cjpeg.so \
@@ -139,9 +139,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/GT-P1000/proprietary/JQ1/camera/datapattern_420sp_s5k5ccgx.yuv:system/cameradata/datapattern_420sp_s5k5ccgx.yuv \
-    vendor/samsung/GT-P1000/proprietary/JQ1/camera/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
-
-#    vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcamera_client.so:system/lib/libcamera_client.so \
+    vendor/samsung/GT-P1000/proprietary/JQ1/camera/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+    vendor/samsung/GT-P1000/proprietary/JQ1/camera/libcamera_client.so:system/lib/libcamera_client.so
 
 #
 # TV out
