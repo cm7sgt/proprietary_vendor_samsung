@@ -19,10 +19,10 @@
 #
 # RIL
 #
-PRODUCT_COPY_FILES +=  vendor/samsung/SPH-P100/proprietary/EF17/ril/libsecril-client.so:system/lib/libsecril-client.so \
-                       vendor/samsung/SPH-P100/proprietary/EF17/ril/libril.so:system/lib/libril.so \
-                       vendor/samsung/SPH-P100/proprietary/EF17/ril/libsec-ril40.so:system/lib/libsec-ril40.so \
-                       vendor/samsung/SPH-P100/proprietary/EF17/ril/rild:system/bin/rild \
+PRODUCT_COPY_FILES +=  vendor/samsung/SPH-P100/proprietary/EF01/ril/libsecril-client.so:system/lib/libsecril-client.so \
+                       vendor/samsung/SPH-P100/proprietary/EF01/ril/libril.so:system/lib/libril.so \
+                       vendor/samsung/SPH-P100/proprietary/EF01/ril/libsec-ril40.so:system/lib/libsec-ril40.so \
+                       vendor/samsung/SPH-P100/proprietary/EF01/ril/rild:system/bin/rild \
                        vendor/samsung/SPH-P100/proprietary/EF17/ril/drexe:system/bin/drexe \
                        vendor/samsung/SPH-P100/proprietary/EF17/ril/pppd_runner:system/bin/pppd_runner \
                        vendor/samsung/SPH-P100/proprietary/EF17/ril/init.cdma-pppd:system/etc/init.cdma-pppd \
